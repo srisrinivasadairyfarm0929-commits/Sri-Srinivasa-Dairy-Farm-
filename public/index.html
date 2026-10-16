@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c2d"><meta name="description" content="Sri Srinivasa Dairy Farm Manager">
+<title>Sri Srinivasa Dairy Farm Manager</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/style.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">✦</div><div><b>Sri Srinivasa</b><small>Dairy Farm Manager</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <button class="nav active" data-page="home">⌂ <span>Home</span></button>
+    <button class="nav" data-page="delivery">⇢ <span>Delivery</span></button>
+    <button class="nav" data-page="customers">♙ <span>Customers</span></button>
+    <button class="nav" data-page="reports">▤ <span>Reports & Invoices</span></button>
+    <button class="nav" data-page="staff">♧ <span>Staff</span></button>
+    <button class="nav" data-page="products">▣ <span>Products</span></button>
+    <button class="nav" data-page="expenses">₹ <span>Expenses</span></button>
+    <div class="nav-label">MORE</div>
+    <button class="nav" data-page="settings">⚙ <span>Settings</span></button>
+    <div class="sidebar-foot"><div class="avatar">SS</div><div><b id="sideUser">Farm Admin</b><small id="sideRole">Administrator</small></div><button id="logout" title="Sign out">↪</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="hamburger" id="hamburger">☰</button><div><div class="eyebrow" id="todayLabel">DAIRY OPERATIONS</div><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><span class="online-dot"></span><span class="top-user" id="topUser">Farm Admin</span><div class="avatar">SS</div></div></header>
+    <div id="app" class="content"><div class="loading">Loading dairy operations…</div></div>
+    <nav class="bottom-nav">
+      <button data-page="home" class="active"><span>⌂</span>Home</button>
+      <button data-page="delivery"><span>⇢</span>Delivery</button>
+      <button data-page="customers"><span>♙</span>Customers</button>
+      <button data-page="reports"><span>▤</span>Reports</button>
+      <button data-page="settings"><span>⚙</span>Settings</button>
+    </nav>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="/app.js"></script>
+</body></html>
